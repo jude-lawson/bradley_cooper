@@ -42,6 +42,11 @@ body {
   width: 110px;
 }
 
+.intro-button i {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
 .square {
   background-color: rgb(200, 58, 243);
   display: flex;
@@ -54,43 +59,104 @@ body {
   text-transform: uppercase;
 }
 
+.square i {
+  margin-bottom: 10px;
+}
+
 .square#profile {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
+  background-color: rgb(243, 161, 58)
 }
 
 .carousel {
   grid-column: 4 / 6;
   grid-row: 1 / 4;
-  background-color: aqua;
+  background-image: url("./ryan-holloway-168925-unsplash-with-credit.jpeg");
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+}
+
+#carousel-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 12px 12px 0 0;
+}
+
+.carousel-nav-dot {
+  height: 6px;
+  width: 6px;
+  background-color: #BBB;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.carousel-nav-dot:last-of-type {
+  margin-right: 8px;
+}
+
+.active {
+  background-color: #FFF;
+}
+
+#carousel-arrows {
+  display: flex;
+  width: 100%;
+  height: 20px;
+  justify-content: space-between;
+  margin-top: 70%;
+}
+
+.carousel-arrow {
+  width: 20px;
+  height: 20px;
+  margin: 12px 0 12px 0;
+  border: 1px solid #AAA;
+  background-color: rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50%;
+}
+
+.carousel-arrow i {
+  margin: 0;
 }
 
 .square#experience {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background-color: rgb(64, 138, 191);
 }
 
 .square#education {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  background-color: rgb(225, 100, 81);
 }
 
 .square#blog {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  background-color: rgb(96, 185, 128);
 }
 
 .square#social-menu {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  background-color: rgb(232, 113, 59);
 }
 
 .square#contact {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  background-color: rgb(64, 138, 191);
 }
 
 .square#portfolio {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
+  background-color: rgb(232, 113, 59);
 }
