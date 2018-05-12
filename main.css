@@ -9,17 +9,49 @@ body {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 33.3% 33.3% 33.3%;
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
 }
 
 .rectangle {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
-  background-color: rgb(96, 185, 128)
+  background-color: rgb(96, 185, 128);
+  padding: 10px 0 0 20px;
+}
+
+.rectangle * {
+  margin-bottom: 12px;
+}
+
+.rectangle h1 {
+  text-transform: uppercase;
+}
+
+.rectangle p {
+  font-size: 12px;
+}
+
+.intro-button {
+  text-transform: uppercase;
+  border: 2px solid #FFF;
+  background-color: transparent;
+  padding: 10px;
+  color: #FFF;
+  margin-right: 20px;
+  width: 110px;
 }
 
 .square {
   background-color: rgb(200, 58, 243);
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square h5 {
+  text-transform: uppercase;
 }
 
 .square#profile {
@@ -27,7 +59,7 @@ body {
   grid-row: 1 / 2;
 }
 
-.portrait {
+.carousel {
   grid-column: 4 / 6;
   grid-row: 1 / 4;
   background-color: aqua;
