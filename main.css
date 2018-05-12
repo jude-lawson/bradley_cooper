@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.rectangle {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  background-color: rgb(96, 185, 128)
+}
+
+.square {
+  background-color: rgb(200, 58, 243);
+  border: 1px solid black;
+}
+
+.square#profile {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.portrait {
+  grid-column: 4 / 6;
+  grid-row: 1 / 4;
+  background-color: aqua;
+}
+
+.square#experience {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.square#education {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.square#blog {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.square#social-menu {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.square#contact {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.square#portfolio {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
